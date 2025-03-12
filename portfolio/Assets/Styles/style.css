@@ -1,0 +1,101 @@
+.nav {
+	display: flex;
+	justify-content: space-around;
+	background-color: skyblue;
+	font-family: "Montserrat", sans-serif;
+	color: yellow;
+	padding: 15px;
+	animation-name: kayyvincible ;
+	transition: background-color 0.5s ;
+}
+
+@keyframes kayyvincible {
+	0% {
+		background-color: skyblue;
+		color: yellow;
+	}
+
+	50% {
+		background-color: darkblue;
+		color: white;
+	}
+
+	100% {
+		background-color: skyblue;
+		color: yellow;
+	}
+}
+
+.nav a {
+	color: inherit;
+	padding: 10px;
+	text-decoration: none;
+	font-weight: bold;
+	transition: color 0.5s ;
+}
+
+.nav a:hover {
+	color: lightgray;
+}
+
+.abt {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 20px;
+}
+
+.abt img {
+	width: 50%;
+	height: auto;
+	position: relative;
+}
+
+.abt p {
+	font-size: 20px;
+	color: aliceblue;
+	position: absolute;
+}
+
+
+.achievements ul {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.8);
+	color: white;
+	padding: 20px;
+	border-radius: 10px;
+	margin: 20px;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+	width: 0px 25px;
+}
+
+.achievements {
+	display: flex;
+	justify-content: space-between;
+}
+
+footer{
+	display: flex;
+	justify-content: space-around;
+	background-color: skyblue;
+	font-family: "Montserrat", sans-serif;
+	color: yellow;
+	padding: 15px;
+}
+	
+
+
+
+footer p:hover {
+	color: lightgray;
+}
+
+footer {
+	text-align: center;
+	padding: 20px;
+	width: 100%;
+    background-color: skyblue;
+    color: yellow;
+}
