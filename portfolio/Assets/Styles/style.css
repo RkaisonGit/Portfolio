@@ -1,101 +1,174 @@
-.nav {
-	display: flex;
-	justify-content: space-around;
-	background-color: skyblue;
-	font-family: "Montserrat", sans-serif;
-	color: yellow;
-	padding: 15px;
-	animation-name: kayyvincible ;
-	transition: background-color 0.5s ;
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-@keyframes kayyvincible {
-	0% {
-		background-color: skyblue;
-		color: yellow;
-	}
 
-	50% {
-		background-color: darkblue;
-		color: white;
-	}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: linear-gradient(45deg, skyblue, darkblue);
+    color: white;
+}
 
-	100% {
-		background-color: skyblue;
-		color: yellow;
-	}
+.nav .logo {
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .nav a {
-	color: inherit;
-	padding: 10px;
-	text-decoration: none;
-	font-weight: bold;
-	transition: color 0.5s ;
+    color: yellow;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
 }
 
 .nav a:hover {
-	color: lightgray;
+    color: lightgray;
 }
 
+
 .abt {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto;
+    max-width: 900px;
+}
+.abt-text{
+    padding:20px;
 }
 
 .abt img {
-	width: 50%;
-	height: auto;
-	position: relative;
+    width: 350px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-.abt p {
-	font-size: 20px;
-	color: aliceblue;
-	position: absolute;
+.abt-text {
+    max-width: 500px;
+    font-size: 18px;
+    line-height: 1.6;
 }
 
+.abt-text p {
+    font-weight: 600;
+    font-size: 20px;
+    color: black;
+}
 
-.achievements ul {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	background-color: rgba(0, 0, 0, 0.8);
-	color: white;
-	padding: 20px;
-	border-radius: 10px;
-	margin: 20px;
-	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-	width: 0px 25px;
+.abt-text span {
+    font-weight: 300;
+    color: gray;
 }
 
 .achievements {
-	display: flex;
-	justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 900px;
+    margin: 40px auto;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-footer{
-	display: flex;
-	justify-content: space-around;
-	background-color: skyblue;
-	font-family: "Montserrat", sans-serif;
-	color: yellow;
-	padding: 15px;
+.achievements img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
 }
-	
 
-
-
-footer p:hover {
-	color: lightgray;
+.achievements ul {
+    list-style: none;
+    padding: 20px;
 }
+
+.achievements h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #333;
+}
+
+.achievements li {
+    font-size: 18px;
+    background: #e3f2fd;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
 
 footer {
-	text-align: center;
-	padding: 20px;
-	width: 100%;
-    background-color: skyblue;
+    background: skyblue;
     color: yellow;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px;
+    font-weight: 500;
+}
+
+footer p:hover {
+    color: lightgray;
+}
+.langs {
+    text-align: center;
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 800px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.langs h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+
+.lang-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.lang-stuff {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding:50px;
+}
+.lang-stuff img {
+    width: 100px; 
+    height: 100px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+   padding:20px;
+    
+}
+
+.lang-stuff img:hover {
+    transform: scale(1.1); 
+}
+.lang-stuff span {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color:gray;
 }
